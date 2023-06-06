@@ -117,9 +117,9 @@ const[editTodo, setEditTodo]= useState<TodoType |  null>(null);
         </tr>
       </thead>
       <tbody>
-        {todos.map((item: TodoType, index: number)=>{
+        {todos.map<ReactElement>((item,index)=>{
             return(
-            <tr>
+            <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.title}</td>
                 <td>

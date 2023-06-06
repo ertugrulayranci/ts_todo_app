@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default function useApi(){
-    //todo
+    //todo configure axios in here
     
     return axios;
 
